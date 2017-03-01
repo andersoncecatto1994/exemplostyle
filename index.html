@@ -3,36 +3,152 @@
 		<title>Projeto Dois</title>
 
 		<style type="text/css">
+			
+			body{
+				margin: 0px auto;
+			}
+
 			.topo{
 				width: 100%;
 				height: 20%;
 				background-color: blue;
 				color: white;
+				text-align: center;
+				display: inline-block;
 			}
 
 			.meio{
-				height: 50%;
+				height: 100%;
 				background-color: green;
 				color: #FFFFFF;
 			}
 
 			.rodape{
+				height: 100px;
+				width: 100%;
 				background-color: red;
 				color: #FFFFFF;
-				height: 50%;
+				position: fixed;
+				bottom: 0px;
+		
+			}
+
+			.menu{
+				width: 200px;
+				height: 100%;
+				float: left;
+				background-color: goldenrod;
+				color: #FFFFFF;
+			}
+
+			ul li a{
+				text-decoration: none;
+			}
+
+			ul li{
+				list-style: none;
+				margin-bottom: 15px
+			}
+
+			#titulo{
+				margin-top: 30px;
 			}
 		</style>
 	</header>
 
 	<body>
 		<div class="topo">
-			Div 1
+			<h2 id="titulo">Exemplo de Estilos</h2>
 		</div>
+		
+		<div class="menu">
+			<div class="corpoMenu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>	
+			</div>
+			
+		</div>
+		
 		<div class="meio">
-			Div 2
+			<form>
+				<div>
+					<label>Texto</label>
+					<input type="text">
+				</div>
+				<div>
+					<label>Numero</label>
+					<input type="number">
+				</div>
+				<div>
+					<label>Botão</label>
+					<input type="button">
+				</div>
+				<div>
+					<label>checkbox</label>
+					<input type="checkbox">
+				</div>
+				<div>
+					<label>Cor</label>
+					<input type="color">
+				</div>
+				<div>
+					<label>Data</label>
+					<input type="date">
+				</div>
+				<div>
+					<label>time</label>
+					<input type="datatime">
+				</div>
+				<div>
+					<label>Data e Hora com Local</label>
+					<input type="datetime-local">
+				</div>
+				<div>
+					<label>Email</label>
+					<input type="email">
+				</div>
+				<div>
+					<label>Arquivo</label>
+					<input type="file">
+				</div>
+				<div>
+					<label>Hidden</label>
+					<input type="hidden">
+				</div>
+				<div>
+					<label>Imagem</label>
+					<input type="image">
+				</div>
+				<div>
+					<label>Mes</label>
+					<input type="date">
+				</div>
+
+				<input type="text" />
+				<input type="number" />
+				<input type="bottom" />
+				<input type="color" />
+				<input type="date" />
+				<input type="datatime" />
+				<input type="email" />
+				<input type="file" />
+				<input type="hidden" />
+				<input type="image" />
+				<input type="tel" />
+				<input type="seach" />
+				<input type="time" />
+				<input type="url" />
+				<input type="week" />
+				<input type="month" />
+				<input type="password"/>
+			</form>
 		</div>
+		
 		<div class="rodape">
-			Div 3
+			Rodape
 		</div>
 	</body>
 </html>
