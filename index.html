@@ -54,6 +54,14 @@
 				margin-top: 30px;
 			}
 		</style>
+
+		<script type="text/javascript">
+			function showAlert(){
+            	var input = document.getElementById('texto');
+                alert(input.value)
+            }
+		</script>
+
 	</header>
 
 	<body>
@@ -76,7 +84,7 @@
 			<form>
 				<div>
 					<label>Texto</label>
-					<input type="text" required>
+					<input type="text" required placeholder="texto" minlength="2" maxlength="5" id="texto">
 				</div>
 				<div>
 					<label>Numero</label>
@@ -84,7 +92,7 @@
 				</div>
 				<div>
 					<label>Botão</label>
-					<input type="button">
+					<input type="button" onclick="showAlert()">
 				</div>
 				<div>
 					<label>checkbox</label>
